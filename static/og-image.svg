@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#06080F"/>
+  <circle cx="970" cy="120" r="250" fill="#00C2FF" fill-opacity="0.12"/>
+  <circle cx="250" cy="530" r="220" fill="#7B61FF" fill-opacity="0.12"/>
+  <rect x="80" y="80" width="1040" height="470" rx="36" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="120" y="210" fill="#F0F6FF" font-family="Arial, sans-serif" font-size="64" font-weight="700">Olunlade Abdulmuiz</text>
+  <text x="120" y="290" fill="#8B99B3" font-family="Arial, sans-serif" font-size="30">Interactive Developer Portfolio</text>
+  <text x="120" y="380" fill="#00C2FF" font-family="Arial, sans-serif" font-size="28">Frontend Wizards Stage 5b</text>
+  <text x="120" y="460" fill="#F0F6FF" font-family="Arial, sans-serif" font-size="24">SvelteKit / TypeScript / Motion / Fintech</text>
+</svg>

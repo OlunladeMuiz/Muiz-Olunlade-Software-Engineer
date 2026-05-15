@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#06080F" />
+    <script>
+      (function () {
+        try {
+          var readCookie = function (name) {
+            var match = document.cookie
+              .split('; ')
+              .find(function (value) {
+                return value.indexOf(name + '=') === 0;
+              });
+
+            return match ? decodeURIComponent(match.split('=').slice(1).join('=')) : null;
+          };
+          var theme = localStorage.getItem('portfolio-theme') || readCookie('portfolio-theme') || 'dark';
+          var accent = localStorage.getItem('portfolio-accent') || readCookie('portfolio-accent') || 'cyan';
+          var accentMap = {
+            cyan: '#00C2FF',
+            violet: '#7B61FF',
+            amber: '#F5A623',
+            emerald: '#3DBA7A',
+            rose: '#E25563'
+          };
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.dataset.accent = accent;
+          document.documentElement.style.setProperty(
+            '--accent-primary',
+            accentMap[accent] || accentMap.cyan
+          );
+        } catch (error) {
+          document.documentElement.dataset.theme = 'dark';
+          document.documentElement.dataset.accent = 'cyan';
+        }
+      })();
+    </script>
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
