@@ -1,0 +1,11 @@
+node_modules
+.svelte-kit
+build
+dist
+coverage
+.env
+.env.sample
+.DS_Store
+playwright-report
+test-results
+vite.svg
