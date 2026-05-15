@@ -14,7 +14,7 @@ SvelteKit portfolio scaffold for Olunlade Abdulmuiz, built from the Stage 5b TRD
 ## Local setup
 
 1. Install dependencies.
-2. Copy `.env.example` to `.env` if you want live AI or email delivery.
+2. Copy `.env.sample` to `.env.local` if you want live AI or email delivery.
 3. Run `npm run dev`.
 
 ## Checks

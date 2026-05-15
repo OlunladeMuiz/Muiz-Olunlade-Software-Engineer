@@ -4,7 +4,10 @@ build
 dist
 coverage
 .env
-.env.sample
+.env.local
+.env.*.local
+env.local
+.vercel/
 .DS_Store
 playwright-report
 test-results
